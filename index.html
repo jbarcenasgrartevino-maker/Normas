@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NORMAS DE SEGURIDAD</title>
+
+<style>
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2f7, #d9e2ec);
+  margin: 0;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ✅ LOGO CENTRADO */
+.logo {
+  display: block;
+  margin: 0 auto 20px auto;
+  max-width: 180px;
+}
+
+/* TÍTULOS */
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* ✅ GRID BIEN DEFINIDO */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas en PC */
+  gap: 20px;
+}
+
+/* TARJETAS */
+.card {
+  background: white;
+  padding: 20px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* IMÁGENES */
+.card img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+/* TEXTO */
+.card div {
+  font-weight: 600;
+}
+
+/* ✅ RESPONSIVE TABLET */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ✅ RESPONSIVE MÓVIL */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    max-width: 140px;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- ✅ LOGO -->
+  <img src=".\images\logo.png" alt="Logo empresa" class="logo">
+
+  <h1>NORMAS DE SEGURIDAD</h1>
+  <p>Seleccione su idioma</p>
+
+  <div class="grid">
+
+    <!-- ESPAÑOL -->
+    <a class="card" href=".\document\normas_ES.pdf" target="_blank">
+      <img src="https://flagcdn.com/w80/es.png" alt="Español">
+      <div>Español</div>
+    </a>
+
+    <!-- ESKERA -->
+    <a class="card" href=".\document\normas_EUS.pdf" target="_blank">
+      <img src=".\images\eus.png" alt="Euskara">
+      <div>Euskara</div>
+    </a>
+	
+	    <!-- PORTUGUÉS -->
+    <a class="card" href=".\document\normas_PT.pdf" target="_blank">
+      <img src="https://flagcdn.com/w80/pt.png" alt="Português">
+      <div>Português</div>
+    </a>
+
+    <!-- INGLÉS -->
+    <a class="card" href=".\document\normas_BG.pdf" target="_blank">
+      <img src="https://flagcdn.com/w80/gb.png" alt="English">
+      <div>English</div>
+    </a>
+
+    <!-- ALEMÁN -->
+    <a class="card" href=".\document\normas_DE.pdf" target="_blank">
+      <img src="https://flagcdn.com/w80/de.png" alt="Deutsch">
+      <div>Deutsch</div>
+    </a>
+
+    <!-- FRANCÉS -->
+    <a class="card" href=".\document\normas_FR.pdf" target="_blank">
+      <img src="https://flagcdn.com/w80/fr.png" alt="Français">
+      <div>Français</div>
+    </a>
+	
+	<!-- RUMANO -->
+    <a class="card" href=".\document\normas_RO.pdf" target="_blank">
+      <img src="https://flagcdn.com/w80/ro.png" alt="Română">
+      <div>Română</div>
+    </a>
+
+	<!-- BÚLGARO -->
+    <a class="card" href=".\document\normas_bg.pdf" target="_blank">
+      <img src="https://flagcdn.com/w80/bg.png" alt="Български">
+      <div>Български</div>
+    </a>
+	
+	<!-- RUSO -->
+    <a class="card" href=".\document\normas_RU.pdf" target="_blank">
+      <img src="https://flagcdn.com/w80/ru.png" alt="Русский">
+      <div>Русский</div>
+    </a>
+
+  </div>
+
+</div>
+
+</body>
+</html>
